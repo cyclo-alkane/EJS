@@ -1,0 +1,9 @@
+<%-include("partials/header"); -%>
+      <h1>Home</h1>
+      <p><%=homeStartingContent%></p>
+       <%for(var i=0;i<postData.length;i++){%>
+        <h1><%=postData[i].title%></h1>
+        <p><%=postData[i].postedData%></p>
+    <%  } %>
+
+<%- include("partials/footer"); -%>
